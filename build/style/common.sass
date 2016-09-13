@@ -1,0 +1,57 @@
+@import "compass"
+@import "compass/reset"
+$icons-spacing: 2px
+@import "icons/*.png"
+
+@import "libs/slick"
+@import "libs/slick-theme"
+
+@import "variables/variables"
+@import "mixins/mixins"
+
+@import "fonts"
+@import "icons"
+
+body
+  min-width: 320px
+
+.wrapper-page
+  max-width: 1200px
+  min-width: 320px
+  margin: 0 auto
+
+a
+  text-decoration: none
+  color: black
+
+.hide
+  display: none
+
+.general-background
+  background: $app-light-blue
+
+.gradient-background
+  background: rgba(208,218,231,1)
+  background: -moz-linear-gradient(top, rgba(208,218,231,1) 0%, rgba(239,238,236,1) 100%)
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(208,218,231,1)), color-stop(100%, rgba(239,238,236,1)))
+  background: -webkit-linear-gradient(top, rgba(208,218,231,1) 0%, rgba(239,238,236,1) 100%)
+  background: -o-linear-gradient(top, rgba(208,218,231,1) 0%, rgba(239,238,236,1) 100%)
+  background: -ms-linear-gradient(top, rgba(208,218,231,1) 0%, rgba(239,238,236,1) 100%)
+  background: linear-gradient(to bottom, rgba(208,218,231,1) 0%, rgba(239,238,236,1) 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0dae7', endColorstr='#efeeec', GradientType=0 )
+
+@import "../components/header/header"
+@import "../components/nav-contact/nav-contact"
+@import "../components/navbar/navbar"
+@import "../components/slider/slider"
+@import "../components/contact-prompt/contact-prompt"
+@import "../components/last-project/last-project"
+@import "../components/maps/maps"
+@import "../components/form/form"
+@import "../components/company/company"
+@import "../components/our-services/our-services"
+@import "../components/describe-services/describe-services"
+@import "../components/project-item/project-item"
+@import "../components/social/social"
+
+/*# sourceMappingURL=common.css.map*/

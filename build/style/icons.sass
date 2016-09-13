@@ -1,0 +1,28 @@
+.icon
+  &-mail
+    width: 20px
+    height: 15px
+    @include icons-sprite(mail-icon)
+  &-phone
+    width: 16px
+    height: 21px
+    @include icons-sprite(phone-icon)
+  &-map
+    width: 14px
+    height: 20px
+    @include icons-sprite(map-icon)
+  &-vk, &-fc, &-inst
+    width: 32px
+    height: 32px
+  &-vk
+    @include icons-sprite(vk-icon)
+    &--hover:hover
+      @include icons-sprite(vk-hv-icon)
+  &-fc
+    @include icons-sprite(fc-icon)
+    &--hover:hover
+      @include icons-sprite(fc-hv-icon)
+  &-inst
+    @include icons-sprite(inst-icon)
+    &--hover:hover
+      @include icons-sprite(inst-hv-icon)

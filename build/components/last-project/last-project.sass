@@ -1,0 +1,132 @@
+.last-project
+  color: white
+  margin-bottom: 115px
+  &__wrapper
+    background: $app-dark-grey
+    overflow: hidden
+    padding-left: 40px
+    margin-left: -40px
+  &__left-colm
+    overflow: hidden
+    width: 56.25%
+    float: left
+  &__right-colm
+    overflow: hidden
+    width: 43.75%
+    float: right
+  &__item-project
+    position: relative
+    cursor: pointer
+    &:hover .proj-inform
+      opacity: 1
+      +Anim(0.4s)
+  &__last-item
+    margin-top: -3px
+  &__title-wrap
+    padding: 60px 0 15px 50px
+    color: $app-light-black
+  &__title
+    text-transform: uppercase
+    +AccentColor()
+    +SegSemiBold()
+    font-size: 36px
+    margin-bottom: 10px
+  &__description
+    +SegReg()
+    text-transform: uppercase
+    font-size: 18px
+    line-height: 36px
+    max-width: 500px
+  &__see-more
+    display: block
+    text-transform: uppercase
+    color: white
+    +SegBold()
+    text-align: center
+    padding: 55px 0
+    +Anim()
+    &:hover
+      color: $app-yellow
+
+
+.proj-inform
+  opacity: 0
+  +PosAbs()
+  max-width: 415px
+  height: 220px
+  font-size: 18px
+  text-align: center
+  &__icon
+    width: 36px
+    height: 43px
+    @include icons-sprite(house-icon)
+    margin: 0 auto 50px auto
+  &__title
+    +SegBold()
+    text-transform: uppercase
+    margin-bottom: 40px
+  &__description
+    line-height: 24px
+    +SegReg()
+
+@include media-md
+  .last-project
+    margin-bottom: 60px
+    &__wrapper
+      padding-left: 0
+      margin-left: 0
+    &__title-wrap
+      padding: 45px 0 25px 20px
+    &__title
+      font-size: 20px
+    &__description
+      font-size: 16px
+      line-height: 25px
+    &__see-more
+      padding: 20px 0
+
+  .proj-inform
+    opacity: 1
+
+@include media-xs
+  .last-project
+    margin-bottom: 60px
+    &__left-colm, &__right-colm
+      width: 100%
+      max-width: 676px
+      float: none
+      margin: 0 auto
+    &__right-colm
+      margin-top: -3px
+    &__item-project
+      &--min-width
+        float: left
+        width: 50%
+        overflow: hidden
+    &__item-img
+      width: 100%
+
+  .proj-inform
+    height: 160px
+    &__icon
+      margin-bottom: 10px
+    &__title
+      font-size: 18px
+      margin-bottom: 10px
+    &__description
+      font-size: 14px
+      line-height: 24px
+
+@include media-xss
+  .last-project
+    &__left-colm, &__right-colm
+      width: 90%
+    &__item-project
+      &--min-width
+        float: none
+        width: 100%
+
+@include media-xsss
+  .last-project
+    &__left-colm, &__right-colm
+      width: 100%

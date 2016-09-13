@@ -1,0 +1,41 @@
+-
+  var slides = [
+    ['Lorem ipsum dolor', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', '$ 000.000,00', 'http://placehold.it/1920x900', 'slider-alt-name'],
+    ['Lorem ipsum dolor', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', '$ 000.000,00', 'http://placehold.it/1920x900', 'slider-alt-name'],
+    ['Lorem ipsum dolor', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', '$ 000.000,00', 'http://placehold.it/1920x900', 'slider-alt-name'],
+    ['Lorem ipsum dolor', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', '$ 000.000,00', 'http://placehold.it/1920x900', 'slider-alt-name']
+  ]
+  var contactPromt = {
+  'title': 'Lorem ipsum',
+  'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet'
+  }
+
+doctype html
+html(lang='ru')
+  head
+   include components/head/head
+  body
+    include components/header/header
+
+    main.main.general-background
+      section.main__last-project.backg-main-standart
+        include components/last-project/last-project
+
+      section.main__nav-contact
+      -
+        var navContact = {
+        'navContact': 'nav-contact--backg-standart',
+        'navContactItem': 'nav-contact__item--border-right-line nav-contact__item--padding-more',
+        'navContactItemOrder': 'nav-contact__item--order-first',
+        'navContactWrapperIcon': 'nav-contact__wrap-icon--backg-standart'
+        }
+      include components/nav-contact/nav-contact
+
+      section.main__social
+       include components/social/social
+
+
+    footer.footer.wrapper-page
+      include components/navbar/navbar
+
+    script(src='./script/script.min.js')

@@ -1,0 +1,24 @@
+if navContact
+else
+  -var navContact = {}
+
+.nav-contact(class= navContact.navContact)
+  ul.nav-contact__list
+    li.nav-contact__item(class= navContact.navContactItem)
+      .nav-contact__wrap-icon(class= navContact.navContactWrapperIcon)
+        .nav-contact__icon.icon-mail
+      .nav-contact__contacts
+        .nav-contact__title Email
+        .nav-contact__inform test@gmail.com
+    li.nav-contact__item(class= navContact.navContactItem, class= navContact.navContactItemOrder)
+      .nav-contact__wrap-icon(class= navContact.navContactWrapperIcon)
+        .nav-contact__icon.icon-phone
+      .nav-contact__contacts
+        .nav-contact__title Phone
+        .nav-contact__inform +0 000 000 0000
+    li.nav-contact__item(class= navContact.navContactItem)
+      .nav-contact__wrap-icon(class= navContact.navContactWrapperIcon)
+        .nav-contact__icon.icon-map
+      .nav-contact__contacts
+        .nav-contact__title Address
+        .nav-contact__inform Sed dignissim interdum

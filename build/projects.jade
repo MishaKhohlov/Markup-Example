@@ -1,0 +1,118 @@
+-
+  var slides = [
+  ['It is a long established fact',
+  'It is a long established.',
+  'подробнее',
+  'http://placehold.it/1920x900',
+  'slider-alt-name'],
+  ['It is a long established fact',
+  'It is a long established.',
+  'подробнее',
+  'http://placehold.it/1920x900',
+  'slider-alt-name',
+  'slider__sub-title--center-side'],
+  ['It is a long established fact',
+  'It is a long established.',
+  'подробнее',
+  'http://placehold.it/1920x900',
+  'slider-alt-name']
+  ]
+  var modSlider = {
+  'title': 'slider__title--center-side',
+  'subTitle': 'slider__sub-title--center-side'
+  }
+
+doctype html
+html(lang='ru')
+  head
+    include components/head/head
+  body
+    include components/header/header
+
+  main.projest.general-background
+
+    section.projects__residential-property.wrapper-page
+      -
+        var ourServices = {
+        'title': 'Lorem',
+        'titleAccent' : 'Ipsum',
+        'subTitle': 'It is a long established fact It is ',
+        'subTitleNewLine': 'It is a long established fact',
+        'img': 'http://placehold.it/527x176',
+        'imgAlt': 'our services img',
+        'orderBlock': 'our-services__wrap-title--order-first',
+        'orderAccent': 'our-services__title--accent-change',
+        'icons': './assets/images/icons/house-icon2.png'
+        }
+      include ./components/our-services/our-services
+
+    section.projects__residential-property-projects.wrapper-page
+      -
+        var projects = [
+          {'name': 'Lorem ipsum',
+          'img': 'http://placehold.it/268x368',
+          'imgAlt': 'Lorem ipsum',
+          'description': 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ',
+          'link': '#'},
+          {'name': 'Lorem ipsum',
+          'img': 'http://placehold.it/268x368',
+          'imgAlt': 'Lorem ipsum',
+          'description': 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ',
+          'link': '#'},
+          {'name': 'Lorem ipsum',
+          'img': 'http://placehold.it/268x368',
+          'imgAlt': 'Lorem ipsum',
+          'description': 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ',
+          'link': '#'},
+          {'name': 'Lorem ipsum',
+          'img': 'http://placehold.it/268x368',
+          'imgAlt': 'Lorem ipsum',
+          'description': 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ',
+          'link': '#'}
+        ]
+      include ./components/project-item/project-item
+
+    .projects__wrapper.gradient-background
+      section.projects__commercial-real-estate-projects.wrapper-page
+        -
+          var ourServices = {
+          'title': 'Lorem',
+          'titleAccent' : 'Ipsum',
+          'subTitle': 'It is a long established fact It is ',
+          'subTitleNewLine': 'It is a long established fact',
+          'img': 'http://placehold.it/527x176',
+          'imgAlt': 'our services img',
+          'icons': './assets/images/icons/house-icon2.png'
+          }
+        include ./components/our-services/our-services
+      section.projects__commercial-real-estate.wrapper-page
+        -
+          var projects = [
+          {'name': 'Lorem ipsum',
+          'img': 'http://placehold.it/268x368',
+          'imgAlt': 'Lorem ipsum',
+          'description': 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ',
+          'link': '#'},
+          {'name': 'Lorem ipsum',
+          'img': 'http://placehold.it/268x368',
+          'imgAlt': 'Lorem ipsum',
+          'description': 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ',
+          'link': '#'},
+          {'name': 'Lorem ipsum',
+          'img': 'http://placehold.it/268x368',
+          'imgAlt': 'Lorem ipsum',
+          'description': 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ',
+          'link': '#'},
+          {'name': 'Lorem ipsum',
+          'img': 'http://placehold.it/268x368',
+          'imgAlt': 'Lorem ipsum',
+          'description': 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ',
+          'link': '#'}
+          ]
+        include ./components/project-item/project-item
+
+  footer.footer.wrapper-page
+    include components/navbar/navbar
+
+  script(src='./script/script.min.js')
+

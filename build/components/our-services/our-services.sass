@@ -1,0 +1,62 @@
+.our-services
+  overflow: hidden
+  color: $app-light-black
+  display: flex
+  &__image
+    width: 100%
+    position: absolute
+    top: 0
+    height: 100%
+  &__wrap-img
+    flex-basis: 45%
+    flex-grow: 1
+    position: relative
+  &__wrap-title
+    flex-basis: 55%
+    box-sizing: border-box
+    background: $app-dark-grey
+    padding: 25px
+    padding-right: 0
+    &--order-first
+      order: -1
+      flex-basis: 45%
+  &__title
+    +SegSemiBold()
+    font-size: 36px
+    margin-bottom: 10px
+    +AccentColor()
+    text-transform: uppercase
+    &--accent-change
+      color: $app-yellow
+      & b
+        color: $app-light-black
+  &__sub-title
+    +SegReg
+    font-size: 18px
+    line-height: 36px
+    text-transform: uppercase
+  &__icon
+    margin-left: auto
+    margin-right: 40px
+    display: block
+
+@include media-md
+  .our-services
+    &__title
+      font-size: 20px
+    &__sub-title
+      font-size: 16px
+      line-height: 25px
+
+@include media-xs
+  .our-services
+    &__icon
+      display: none
+
+@include media-xss
+  .our-services
+    flex-direction: column
+    &__wrap-img
+      display: none
+    &__wrap-title
+      flex-basis: 100%

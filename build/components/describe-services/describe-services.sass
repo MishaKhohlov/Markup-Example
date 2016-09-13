@@ -1,0 +1,54 @@
+.describe-services
+  margin-top: -100px
+  background: url("../assets/images/test-background1.jpg") no-repeat top right
+  background-size: cover
+  &__wrapper
+    padding: 320px 0 250px 0
+    overflow: hidden
+    display: flex
+    justify-content: space-between
+  &__section
+    width: 40%
+    float: left
+  &__title
+    font-size: 36px
+    +SegSemiBold()
+    padding-bottom: 20px
+    margin-bottom: 18px
+    border-bottom: 1px solid $app-yellow
+    color: $app-black
+  &__description
+    +SegSemiBold()
+    font-size: 18px
+    line-height: 36px
+
+@include media-md
+  .describe-services
+    &__wrapper
+      padding: 220px 0 150px 0
+      justify-content: space-around
+
+@include media-xs
+  .describe-services
+    &__wrapper
+      padding: 120px 0 50px 0
+    &__title
+      font-size: 20px
+    &__description
+      +SegSemiBold()
+      font-size: 16px
+      line-height: 25px
+
+@include media-xss
+  .describe-services
+    &__wrapper
+      padding: 100px 0 30px 0
+      display: block
+    &__title
+      text-align: center
+    &__section
+      float: none
+      width: 90%
+      margin: 0 auto 40px auto
+      &:last-child
+        margin-bottom: 0

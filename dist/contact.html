@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="ru">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="MishaKhohlov">
+    <link rel="stylesheet" href="./css/common.css">
+    <title>Строй City</title>
+  </head>
+  <body>
+    <header class="header">
+      <section class="header__contact">
+        <div class="nav-contact">
+          <ul class="nav-contact__list">
+            <li class="nav-contact__item">
+              <div class="nav-contact__wrap-icon">
+                <div class="nav-contact__icon icon-mail"></div>
+              </div>
+              <div class="nav-contact__contacts">
+                <div class="nav-contact__title">Email</div>
+                <div class="nav-contact__inform">test@gmail.com</div>
+              </div>
+            </li>
+            <li class="nav-contact__item">
+              <div class="nav-contact__wrap-icon">
+                <div class="nav-contact__icon icon-phone"></div>
+              </div>
+              <div class="nav-contact__contacts">
+                <div class="nav-contact__title">Phone</div>
+                <div class="nav-contact__inform">+0 000 000 0000</div>
+              </div>
+            </li>
+            <li class="nav-contact__item">
+              <div class="nav-contact__wrap-icon">
+                <div class="nav-contact__icon icon-map"></div>
+              </div>
+              <div class="nav-contact__contacts">
+                <div class="nav-contact__title">Address</div>
+                <div class="nav-contact__inform">Sed dignissim interdum</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="header__navbar wrapper-page">
+        <div class="navbar">
+          <div class="navbar__logo-wrap"><a href="#" class="navbar__logo-link"><img src="//placehold.it/170x60" alt="alt" class="navbar__logo"></a></div>
+          <nav class="navbar__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="./index.html" class="menu__link menu__link--active">Index</a></li>
+              <li class="menu__item"><a href="./about.html" class="menu__link">About</a></li>
+              <li class="menu__item"><a href="./projects.html" class="menu__link">Project</a></li>
+              <li class="menu__item"><a href="./contact.html" class="menu__link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <section class="header__slider">
+        <div class="slider hide">
+          <div class="slider__item">
+            <div class="slider__head-wrap">
+              <h2 class="slider__title slider__title--center-side">Lorem ipsum dolor sit amet, consectetur.</h2>
+              <h4 class="slider__sub-title slider__sub-title--center-side">Lorem ipsum dolor sit amet.</h4>
+            </div>
+            <h3 class="slider__price-inf">Lorem ipsum</h3><img src="http://placehold.it/1920x900" alt="slider-alt-name" class="slider__img">
+          </div>
+          <div class="slider__item">
+            <div class="slider__head-wrap">
+              <h2 class="slider__title slider__title--center-side">Lorem ipsum dolor sit amet, consectetur.</h2>
+              <h4 class="slider__sub-title slider__sub-title--center-side">Lorem ipsum dolor sit amet.</h4>
+            </div>
+            <h3 class="slider__price-inf">Lorem ipsum</h3><img src="http://placehold.it/1920x900" alt="slider-alt-name" class="slider__img">
+          </div>
+          <div class="slider__item">
+            <div class="slider__head-wrap">
+              <h2 class="slider__title slider__title--center-side">Lorem ipsum dolor sit amet, consectetur.</h2>
+              <h4 class="slider__sub-title slider__sub-title--center-side">Lorem ipsum dolor sit amet.</h4>
+            </div>
+            <h3 class="slider__price-inf">Lorem ipsum</h3><img src="http://placehold.it/1920x900" alt="slider-alt-name" class="slider__img">
+          </div>
+        </div>
+      </section>
+    </header>
+  </body>
+  <main class="contact general-background">
+    <section class="contact__our-contact wrapper-page">
+      <div class="contact-prompt contact-prompt--width-big">
+        <div class="contact-prompt__title">Lorem ipsum</div>
+        <p class="contact-prompt__description contact-prompt__description--width-small">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+      </div>
+    </section>
+    <section class="contact__map wrapper-page">
+      <div id="map" class="map"></div>
+    </section>
+    <section class="contact__form wrapper-page">
+      <div class="form">
+        <div class="form__left-column">
+          <p class="form__description">
+            It is a long established fact that a reader will be distracted by the readable content of a page when
+            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed .
+          </p>
+          <address class="form__address">
+            <div class="form__address-inf">
+              <div class="form__address-item"><span class="form__item-name">telephone</span><span class="form__item-inf">+0 000 000 000</span></div>
+              <div class="form__address-item"><span class="form__item-name">Fax</span><span class="form__item-inf">+0 000 000 0000</span></div>
+              <div class="form__address-item"><span class="form__item-name">E-mail</span><span class="form__item-inf">Lorem ipsum dolor</span></div>
+            </div>
+          </address>
+        </div>
+        <div class="form__right-column">
+          <form action="#" class="form__send-form">
+            <div class="form__line form__line--flexbox-wrap">
+              <input type="name" placeholder="Lorem" name="name" class="form__input-inf">
+              <input type="email" placeholder="Lorem" name="email" class="form__input-inf">
+              <input type="phone" placeholder="Lorem" name="phone" class="form__input-inf">
+            </div>
+            <div class="form__line form__line--margin-bottom">
+              <textarea maxlength="300" placeholder="Сообщение:" rows="3" name="message" class="form__input-message"></textarea>
+            </div>
+            <div class="form__line">
+              <input type="submit" class="form__submit-btn">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="main__social wrapper-page">
+      <div class="social">
+        <div class="social__background social__background--visible-none"></div>
+        <div class="social__wrapper">
+          <ul class="social__list">
+            <li class="social__item"><a href="#" class="social__link">
+                <div class="social__icon icon-vk icon-vk--hover"></div><span class="social__title">Вконтакте</span></a></li>
+            <li class="social__item"><a href="#" class="social__link">
+                <div class="social__icon icon-fc icon-fc--hover"></div><span class="social__title">Facebook</span></a></li>
+            <li class="social__item"><a href="#" class="social__link">
+                <div class="social__icon icon-inst icon-inst--hover"></div><span class="social__title">Instagram</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer wrapper-page">
+    <div class="navbar">
+      <div class="navbar__logo-wrap"><a href="#" class="navbar__logo-link"><img src="//placehold.it/170x60" alt="alt" class="navbar__logo"></a></div>
+      <nav class="navbar__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="./index.html" class="menu__link menu__link--active">Index</a></li>
+          <li class="menu__item"><a href="./about.html" class="menu__link">About</a></li>
+          <li class="menu__item"><a href="./projects.html" class="menu__link">Project</a></li>
+          <li class="menu__item"><a href="./contact.html" class="menu__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script>function initMap() {}</script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8ZmAKtDOSXkgTRseMw-YRo0KEeUkXuIo&amp;callback=initMap" sync></script>
+  <script src="./script/script.min.js"></script>
+</html>

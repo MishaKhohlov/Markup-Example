@@ -1,0 +1,58 @@
+/*media example*/
+@mixin media-xsss-v
+  @media (max-height: #{$media-xsss})
+    @content
+
+@mixin media-lg
+  @media (max-width: #{$media-lg})
+    @content
+
+@mixin media-md
+  @media (max-width: #{$media-mg})
+    @content
+
+@mixin media-xs
+  @media (max-width: #{$media-xs})
+    @content
+
+@mixin media-xss
+  @media (max-width: #{$media-xss})
+    @content
+
+@mixin media-xsss
+  @media (max-width: #{$media-xsss})
+    @content
+
+
+/* Fonts */
+=SegReg
+  font-family: 'SegoeUIRegular', sans-serif
+
+=SegBold
+  font-family: 'SegoeUIBold', sans-serif
+
+=SegItal
+  font-family: 'SegoeUIItalic', sans-serif
+
+=SegLight
+  font-family: 'SegoeUILight', sans-serif
+
+=SegSemiBold
+  font-family: 'SegoeUISemiBold', sans-serif
+
+
+/* Other */
+=PosAbs
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  margin: auto
+
+=Anim($radius: 0.2s)
+  transition: $radius linear all
+
+=AccentColor($color: $app-yellow)
+  & b
+    color: $color

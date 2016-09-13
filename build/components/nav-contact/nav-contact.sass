@@ -1,0 +1,87 @@
+.nav-contact
+  background: $app-light-pink
+  font-size: 18px
+  &--backg-standart
+    background: $app-light-blue
+  &__list
+    padding: 12px 0 18px 0
+    display: flex
+    max-width: 990px
+    margin: 0 auto
+    justify-content: space-between
+  &__item
+    &--padding-more
+      padding-top: 10px
+      padding-bottom: 10px
+    &--border-right-line
+      border-right: 1px solid $app-yellow
+      padding-left: 50px
+      width: 33%
+      &:last-child
+        border: none
+    &--order-first
+      order: -1
+      padding-left: 0
+  &__contacts
+    float: left
+    margin-left: 14px
+  &__wrap-icon
+    float: left
+    height: 62px
+    width: 62px
+    background: white
+    position: relative
+    &--backg-standart
+      background: inherit
+  &__icon
+    +PosAbs()
+  &__title
+    +SegReg()
+    line-height: 25px
+    margin-bottom: 10px
+  &__inform
+    +SegSemiBold()
+
+@include media-md
+  .nav-contact
+    font-size: 14px
+    &__item
+      &--border-right-line
+        border-right: none
+        padding-left: 0
+    &__list
+      padding: 10px 10px
+    &__wrap-icon
+      height: 40px
+      width: 40px
+    &__contacts
+      margin-left: 12px
+    &__title
+      line-height: 15px
+      margin-bottom: 5px
+    &__item
+      &--border-right-line
+        padding-left: 0
+
+@include media-xs
+  .nav-contact
+    &__item
+      &--border-right-line
+        width: initial
+
+@include media-xss
+  .nav-contact
+    &__wrap-icon
+      float: none
+      margin: 0 auto 10px auto
+
+@include media-xsss
+  .nav-contact
+    &__wrap-icon
+      float: left
+    &__list
+      padding-bottom: 0
+      flex-direction: column
+    &__item
+      width: 90%
+      margin: 0 auto 15px auto

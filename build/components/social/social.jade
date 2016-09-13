@@ -1,0 +1,20 @@
+if socialClass
+else
+  -var socialClass = ''
+
+.social
+  .social__background(class= socialClass)
+  .social__wrapper
+    ul.social__list
+      li.social__item
+        a.social__link(href='#')
+          .social__icon.icon-vk.icon-vk--hover
+          span.social__title Вконтакте
+      li.social__item
+        a.social__link(href='#')
+          .social__icon.icon-fc.icon-fc--hover
+          span.social__title Facebook
+      li.social__item
+        a.social__link(href='#')
+          .social__icon.icon-inst.icon-inst--hover
+          span.social__title Instagram

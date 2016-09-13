@@ -1,0 +1,32 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp",
+    "compass": "gem install compass"
+  },
+  "author": "Test",
+  "license": "ISC",
+  "devDependencies": {
+    "babelify": "6.4.0",
+    "browser-sync": "^2.14.3",
+    "browserify": "^13.0.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-group-css-media-queries": "^1.1.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-uglify": "^1.5.4",
+    "gulp-util": "latest",
+    "vinyl-source-stream": "latest"
+  },
+  "dependencies": {
+    "compass": "^0.1.1",
+    "jquery": "^3.1.0",
+    "ruby": "^0.6.1",
+    "slick-carousel": "^1.6.0"
+  }
+}

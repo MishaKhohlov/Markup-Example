@@ -1,0 +1,47 @@
+-
+  var slides = [
+    ['It is a long established fact that',
+    'It is a long',
+    'подробнее',
+    'http://placehold.it/1920x900',
+    'slider-alt-name'],
+    ['It is a long established fact that',
+    'It is a long',
+    'подробнее',
+    'http://placehold.it/1920x900',
+    'slider-alt-name']
+  ]
+  var modSlider = {
+    'subTitle': 'slider__sub-title--font-big'
+  }
+
+doctype html
+html(lang='ru')
+  head
+    include components/head/head
+  body
+    include components/header/header
+
+  main.about.general-background
+    section.about__company.wrapper-page
+      include components/company/company
+
+    section.about__our-services.wrapper-page
+      -
+        var ourServices = {
+        'title': 'Lorem',
+        'titleAccent' : 'ipsum',
+        'subTitle': 'It is a long established fact that',
+        'subTitleNewLine': 'It is a long.',
+        'img': 'http://placehold.it/527x176',
+        'imgAlt': 'our services img'
+        }
+      include components/our-services/our-services
+
+    section.about__describe-services
+      include components/describe-services/describe-services
+
+  footer.footer.wrapper-page
+    include components/navbar/navbar
+
+  script(src='./script/script.min.js')

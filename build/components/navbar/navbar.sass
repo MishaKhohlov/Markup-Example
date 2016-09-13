@@ -1,0 +1,63 @@
+.navbar
+  overflow: hidden
+  display: flex
+  justify-content: space-between
+  &__logo-wrap
+    margin-top: 35px
+    width: 127px
+    padding: 0 18px
+  &__logo-link
+    display: block
+    overflow: hidden
+
+
+.menu
+  flex-basis: 600px
+  &__list
+    display: flex
+  &__item
+    width: 25%
+  &__link
+    display: block
+    text-align: center
+    padding: 48px 0 46px 0
+    border-color: white
+    font-size: 16px
+    +SegSemiBold()
+    text-transform: uppercase
+    &--active
+      background: $app-yellow
+      border-bottom: 4px solid $app-yellow
+    &:hover
+      +Anim()
+      border-bottom: 4px solid $app-yellow
+
+@include media-md
+  .navbar
+    &__logo-wrap
+      margin-top: 6px
+  .menu
+    &__link
+      padding: 28px 0 26px 0
+      font-size: 14px
+
+@include media-xss
+  .navbar
+    &__logo-wrap
+      margin-top: 6px
+      padding: 0 7px
+  .menu
+    &__link
+      font-size: 12px
+
+@include media-xsss
+  .navbar
+    flex-direction: column
+    &__logo-wrap
+      margin: 10px auto 10px auto
+      padding: 0
+
+  .menu
+    flex-basis: auto
+    &__link
+      font-size: 11px

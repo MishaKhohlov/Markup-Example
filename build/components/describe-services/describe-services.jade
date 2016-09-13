@@ -1,0 +1,16 @@
+.describe-services
+  .describe-services__wrapper.wrapper-page
+    -
+      var services = [
+        {'title': 'Sales','description': ['It is a long established fact that a reader will be distracted by the readable contt. ',
+           'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point ' ]},
+        {'title': 'Fixed', 'description': ['It is a long established fact that a reader will be distracted by the readable contt. ',
+        'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point ' ] }
+      ]
+
+    each service in services
+      .describe-services__section
+        h5.describe-services__title #{service.title}
+        p.describe-services__description #{service.description[0]} </br> #{service.description[1]}
+
+

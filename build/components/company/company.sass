@@ -1,0 +1,75 @@
+.company
+  font-size: 18px
+  +SegReg()
+  &__wrap-title
+    padding: 65px 40px 80px 40px
+    background: $app-dark-grey
+    text-transform: uppercase
+  &__title
+    color: $app-yellow
+    +SegSemiBold
+    font-size: 36px
+    margin-bottom: 20px
+  &__sub-title
+    color: $app-light-black
+  &__wrap-content
+    overflow: hidden
+  &__wrap-img, &__wrap-description
+    width: 50%
+    overflow: hidden
+    box-sizing: border-box
+    float: left
+  &__image
+    width: 100%
+  &__wrap-description
+    padding: 0 18px
+  &__description
+    +SegReg()
+    color: $app-dark-grey
+    line-height: 48px
+  &__name-company
+    +SegSemiBold()
+  &__line
+    height: 60px
+    background: $app-yellow
+    margin-top: -2px
+
+@include media-lg
+  .company
+    &__description
+      line-height: 35px
+
+@include media-md
+  .company
+    &__wrap-title
+      padding: 35px 20px
+    &__description
+      line-height: 28px
+
+@include media-xs
+  .company
+    &__wrap-img, &__wrap-description
+      width: 100%
+      float: none
+    &__wrap-img
+      height: 300px
+    &__image
+      margin-top: -150px
+    &__wrap-description
+      margin-bottom: 10px
+
+@include media-xss
+  .company
+    &__wrap-title
+      padding: 45px 20px 25px 20px
+    &__image
+      margin-top: -100px
+    &__title
+      font-size: 20px
+      margin-bottom: 10px
+    &__sub-title, &__description
+      font-size: 16px
+      line-height: 25px
+    &__line
+      height: 20px
+

@@ -1,0 +1,15 @@
+if ourServices
+else
+  - var ourServices = {}
+
+.our-services
+  .our-services__wrap-img
+    img.our-services__image(src= ourServices.img, alt= ourServices.imgAlt)
+  .our-services__wrap-title(class= ourServices.orderBlock)
+    h2.our-services__title(class= ourServices.orderAccent) #{ourServices.title}
+      b  #{ourServices.titleAccent}
+    h5.our-services__sub-title #{ourServices.subTitle}
+      </br> #{ourServices.subTitleNewLine}
+    if ourServices.icons
+      .our-services__wrap-icon
+        img.our-services__icon(src= ourServices.icons)

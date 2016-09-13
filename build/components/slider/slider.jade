@@ -1,0 +1,15 @@
+if modSlider
+else
+  -var modSlider = {}
+
+.slider.hide
+  each slide in slides
+    .slider__item
+      .slider__head-wrap
+        h2.slider__title(class= modSlider.title) #{slide[0]}
+        h4.slider__sub-title(class= modSlider.subTitle) #{slide[1]}
+      if slide[2] == 'подробнее'
+        a(href = '#').slider__more-inf #{slide[2]}
+      else
+        h3.slider__price-inf #{slide[2]}
+      img.slider__img(src= slide[3], alt= slide[4])

@@ -1,0 +1,51 @@
+.social
+  margin-top: 205px
+  padding-bottom: 35px
+  position: relative
+  &__background
+    background: url('../assets/images/abstract-backg.png') no-repeat 0 0
+    width: 558px
+    height: 437px
+    position: absolute
+    right: 0
+    bottom: 0
+    background-size: cover
+    &--visible-none
+      display: none
+  &__wrapper
+    max-width: 510px
+    margin: 0 auto
+  &__list
+    display: flex
+    justify-content: space-between
+  &__title
+    +SegReg()
+    font-size: 15px
+    text-align: center
+    text-transform: uppercase
+  &__link
+    position: relative
+    display: block
+  &__icon
+    margin: 0 auto 20px auto
+
+@include media-xs
+  .social
+    margin-top: 60px
+    padding-bottom: 30px
+    &__background
+      width: 290px
+
+@include media-xss
+  .social
+    margin-top: 40px
+    &__wrapper
+      padding: 0 10px
+
+@include media-xsss
+  .social
+    margin-top: 25px
+    padding-bottom: 25px
+    &__icon
+      margin: 0 auto 10px auto
+      transform: scale(0.8)

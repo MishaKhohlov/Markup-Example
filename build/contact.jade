@@ -1,0 +1,55 @@
+-
+  var slides = [
+    ['Lorem ipsum dolor sit amet, consectetur.',
+    'Lorem ipsum dolor sit amet.',
+    'Lorem ipsum',
+    'http://placehold.it/1920x900',
+    'slider-alt-name'],
+    ['Lorem ipsum dolor sit amet, consectetur.',
+    'Lorem ipsum dolor sit amet.',
+    'Lorem ipsum',
+    'http://placehold.it/1920x900',
+    'slider-alt-name'],
+    ['Lorem ipsum dolor sit amet, consectetur.',
+    'Lorem ipsum dolor sit amet.',
+    'Lorem ipsum',
+    'http://placehold.it/1920x900',
+    'slider-alt-name']
+  ]
+  var modSlider = {
+  'title': 'slider__title--center-side',
+  'subTitle': 'slider__sub-title--center-side'
+  }
+  var contactPromt = {
+  'container': 'contact-prompt--width-big',
+  'wrapDescr': 'contact-prompt__description--width-small',
+  'title': 'Lorem ipsum',
+  'description': 'Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet'
+  }
+  var socialClass = 'social__background--visible-none'
+
+doctype html
+html(lang='ru')
+  head
+    include components/head/head
+  body
+    include components/header/header
+
+  main.contact.general-background
+    section.contact__our-contact.wrapper-page
+      include components/contact-prompt/contact-promt
+
+    section.contact__map.wrapper-page
+      include components/maps/maps
+
+    section.contact__form.wrapper-page
+      include components/form/form
+
+    section.main__social.wrapper-page
+      include components/social/social
+
+  footer.footer.wrapper-page
+    include components/navbar/navbar
+  script= function initMap() {}
+  script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8ZmAKtDOSXkgTRseMw-YRo0KEeUkXuIo&callback=initMap" sync)
+  script(src='./script/script.min.js')

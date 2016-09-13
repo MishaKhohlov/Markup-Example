@@ -1,0 +1,33 @@
+.form
+  .form__left-column
+    p.form__description It is a long established fact that a reader will be distracted by the readable content of a page when
+      | looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed .
+    address.form__address
+      -
+        var adress = [
+          ['telephone', '+0 000 000 000'],
+          ['Fax', '+0 000 000 0000'],
+          ['E-mail', "Lorem ipsum dolor"]
+        ]
+      .form__address-inf
+        each item in adress
+          .form__address-item
+            span.form__item-name #{item[0]}
+            span.form__item-inf #{item[1]}
+
+  .form__right-column
+    form.form__send-form(action= "#")
+      .form__line.form__line--flexbox-wrap
+        -
+          var inputs = [
+          ['name', 'Lorem'],
+          ['email', 'Lorem'],
+          ['phone', "Lorem"]
+          ]
+        each input in inputs
+          input.form__input-inf(type= input[0], placeholder= input[1], name= input[0])
+
+      .form__line.form__line--margin-bottom
+        textarea.form__input-message(maxlength= 300 placeholder= 'Сообщение:' rows= 3, name= 'message')
+      .form__line
+        input.form__submit-btn(type= 'submit')

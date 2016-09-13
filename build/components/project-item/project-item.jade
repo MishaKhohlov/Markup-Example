@@ -1,0 +1,18 @@
+if projects
+else
+  - var projects = []
+
+
+.projects
+  each project, i in projects
+    .projects__item
+      h6.projects__title 
+        span.projects__num 0#{i + 1}/
+        != project.name
+      .projects__img-wrap
+        img.projects__img(src= '#{project.img}#{i + 1}.jpg', alt= project.imgAlt)
+      p.projects__description #{project.description}
+      .projects__link-wrap
+        a(href= project.link).projects__btn-more Больше
+
+
